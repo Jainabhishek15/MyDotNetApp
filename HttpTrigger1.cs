@@ -23,6 +23,7 @@ public class HttpTrigger1
         string message = Environment.GetEnvironmentVariable("MyMessage");
 
         var response = req.CreateResponse();
+        //Getting message from azure
         await response.WriteStringAsync($"Message from Azure: {message}");
         return response;
     }

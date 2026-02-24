@@ -1,5 +1,6 @@
-name: .NET CI
 
+name: .NET CI
+# Triggering first workflow run
 on:
   push:
     branches: [ main ]

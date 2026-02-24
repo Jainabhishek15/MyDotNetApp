@@ -19,7 +19,7 @@ public class HttpTrigger1
     public async Task<HttpResponseData> Run(
         [HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequestData req)
     {
-        // Read Environment Variable from EnvironmentVariable
+        // Read Environment Variable values
         string message = Environment.GetEnvironmentVariable("MyMessage");
 
         var response = req.CreateResponse();
